@@ -7,7 +7,7 @@ This is a repository of a project I did in University of Toronto's Joint Program
 Summary:
 - An individual project inspired to create awareness to youth homelessness in the form of a choose your own adventure game.
 
-Course Involved: 
+Courses Involved: 
 
 MEDE106 Project Development & Presentation
 
