@@ -1,0 +1,470 @@
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+    
+	<title>S2P2</title>
+
+	<!--JQUERY Plugin-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!-- GOOGLE FONTS-->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<!-- Flash SWF Object -->
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<script type="text/javascript" src="js/swfobject.js"></script>
+		<script type="text/javascript">
+		swfobject.registerObject("myId", "9.0.0", "flash/expressInstall.swf");
+		</script>
+	<!-- Full Screen Video For Box 1 Option 4-->
+	<script type="text/javascript" src="jquery.videoBG.js"></script>
+
+	</head>
+
+	<!-- Change Background Image and Fade In Other Elemnts -->
+	
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#start").click(function() {
+                $("html").css("background-image", "url(img/IMG_8238.jpg)");
+                $("#first").fadeOut(2000);
+				$("#bottom1").fadeIn(1000);
+                $("#top1").fadeIn(1000);
+                $("#flashContent").fadeIn(0);
+                $("#box1").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+
+     <!-- First Box -->
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#a1").click(function() {
+                $("html").css("background-image", "url(img/IMG_8252.jpg)");
+                $("#box1").fadeOut(1000);
+				
+                $("#box2").fadeIn(1000);
+				
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#a2").click(function() {
+                $("html").css("background-image", "url(img/IMG_8280.jpg)");
+                $("#box1").fadeOut(1000);
+				
+                $("#box2").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#a3").click(function() {
+                $("html").css("background-image", "url(img/IMG_8320.jpg)");
+               	$("#box1").fadeOut(1000);
+				
+                $("#box2").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+ 
+
+        $(document).ready(function() {
+            $("#a4").click(function() {
+            	
+                $("html").css("background-image:none");
+                $("#box1").fadeOut(1000);
+               	$("#box2").fadeIn(1000);
+				
+                $("#video").fadeIn(1000);
+
+        $('html').videoBG({
+		position:"fixed",
+		zIndex:'auto',
+		mp4:'video/sparechange.mp4',
+		webm:'video/sparechange.webm',
+		loop: false,
+		opacity:100
+	});
+       $('video').on('ended',function(){
+      location.reload();
+    });
+            });
+        });
+        </script>
+
+     <!-- Second Box -->
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#b1").click(function() {
+                $("html").css("background-image", "url(img/IMG_8278.jpg)");
+                $("#box2").fadeOut(1000);
+				
+                $("#box3").fadeIn(1000);
+                $("#video").fadeOut(1000);
+				
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#b2").click(function() {
+                $("html").css("background-image", "url(img/IMG_8282.jpg)");
+                $("#box2").fadeOut(1000);
+				
+                $("#box3").fadeIn(1000);
+                $("#video").fadeOut(1000);
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#b3").click(function() {
+                $("html").css("background-image", "url(img/IMG_8248.jpg)");
+               	$("#box2").fadeOut(1000);
+				
+                $("#box3").fadeIn(1000);
+                $("#video").fadeOut(1000);
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#b4").click(function() {
+                $("html").css("background-image", "url(img/IMG_8321.jpg)");
+                $("#box2").fadeOut(1000);
+				
+                $("#box3").fadeIn(1000);
+                $("#video").fadeOut(1000);
+       
+            });
+        });
+        </script>
+
+     <!-- Third Box -->
+
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#c1").click(function() {
+                $("html").css("background-image", "url(img/IMG_8295.jpg)");
+                $("#box3").fadeOut(1000);
+				
+                $("#box4").fadeIn(1000);
+				
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#c2").click(function() {
+                $("html").css("background-image", "url(img/IMG_8281.jpg)");
+                $("#box3").fadeOut(1000);
+				
+                $("#box4").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#c3").click(function() {
+                $("html").css("background-image", "url(img/IMG_8292.jpg)");
+               	$("#box3").fadeOut(1000);
+				
+                $("#box4").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#c4").click(function() {
+                $("html").css("background-image", "url(img/IMG_8319.jpg)");
+                $("#box3").fadeOut(1000);
+				
+                $("#box4").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+     <!-- Fourth Box -->
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#d1").click(function() {
+                $("html").css("background-image", "url(img/IMG_8347.jpg)");
+                $("#box4").fadeOut(1000);
+				
+                $("#box5").fadeIn(1000);
+				
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#d2").click(function() {
+                $("html").css("background-image", "url(img/IMG_8341.jpg)");
+                $("#box4").fadeOut(1000);
+				
+                $("#box5").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#d3").click(function() {
+                $("html").css("background-image", "url(img/IMG_8331.jpg)");
+               	$("#box4").fadeOut(1000);
+				
+                $("#box5").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+        <script type="text/javascript">
+
+       
+
+        $(document).ready(function() {
+            $("#d4").click(function() {
+                $("html").css("background-image", "url(img/IMG_8324.jpg)");
+                $("#box4").fadeOut(1000);
+				
+                $("#box5").fadeIn(1000);
+       
+            });
+        });
+        </script>
+
+
+
+
+
+
+
+	<body>
+
+<!-- Sound Flash File -->
+
+		
+			<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100" height="auto" id="sound" align="right">
+				<param name="movie" value="flash/sound.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="transparent" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="flash/sound.swf" width="100" height="auto">
+					<param name="movie" value="flash/sound.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="transparent" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+
+			
+		
+
+
+	</div>
+
+	<!-- Video For BOX 1 Option 4 -->
+
+	<div id="video">
+	<video loop="false" id="bgvid">
+	<source src="video/sparechange.webm" type="video/webm">
+	<source src="video/sparechange.mp4" type="video/mp4">
+	</video>
+	</div> 
+
+	<div class="section group" id="first">
+		<div class="col span_1_of_3">
+		<center><h1><p id="title"><img src="img/logo2.png" width="50px" height="auto">HOMELESS</h1></center><div id="about">Homeless is a choose your own adventure story, where you play as a homeless youth living in the streets of Toronto.<center><h1>THE GOAL</h1>The goal of this website is to create awareness of the homeless youth of today. To take yourself into the shoes of a mere experience of what one goes through living without a place to live.</div>
+		</div>
+		<div class="col span_1_of_3" id="middle">
+		<a href="#" id="start"><p id="begin">Click here to begin your experience.</p></a>
+		</div>
+		<div class="col span_1_of_3">
+		<center><h1>PARTICIPANTS</h1></center>
+		<div id="connect">
+		<img src="img/guy1.jpg" width="80px" height="auto">
+		<img src="img/guy2.jpg" width="80px" height="auto">
+		<img src="img/girl1.jpg" width="80px" height="auto">
+		<img src="img/girl2.jpg" width="80px" height="auto">
+		<img src="img/guy1.jpg" width="80px" height="auto">
+		<img src="img/guy2.jpg" width="80px" height="auto">
+		<img src="img/girl1.jpg" width="80px" height="auto">
+		<img src="img/girl2.jpg" width="80px" height="auto">
+		<img src="img/guy1.jpg" width="80px" height="auto">
+		<img src="img/guy2.jpg" width="80px" height="auto">
+		<img src="img/girl1.jpg" width="80px" height="auto">
+		<img src="img/girl2.jpg" width="80px" height="auto">
+		<img src="img/guy1.jpg" width="80px" height="auto">
+		<img src="img/guy2.jpg" width="80px" height="auto">
+		<img src="img/girl1.jpg" width="80px" height="auto">
+		<img src="img/girl2.jpg" width="80px" height="auto">
+		</div>
+		</div>
+	</div>
+
+	<!-- Re appearing Divs -->
+
+	<div id="top1"><p id="first">You wake up at your usual sleeping spot. It's cold out, and you're very hungry. What do you decide to do?</P></div>
+	<div id="bottom1">
+
+		<p id="choices">
+		<div id="box1">
+		<a href="#" id="a1">Find shelter.</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#" id="a2">Find food.</a> 
+		<br> 
+		<a href="#" id="a3">Panhandle.</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		<a href="#" id="a4">Get a job.</a>
+		</div>
+		
+		<div id="box2">
+		<a href="#" id="b1">Choice 1</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#" id="b2">Choice 2</a> 
+		<br> 
+		<a href="#" id="b3">Choice 3</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		<a href="#" id="b4">Choice 4</a>
+		</div>
+
+		
+		<div id="box3">
+		<a href="#" id="c1">Choice 1</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		<a href="#" id="c2">Choice 2</a> 
+		<br> 
+		<a href="#" id="c3">Choice 3</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		<a href="#" id="c4">Choice 4</a>
+		</div>
+		
+		<div id="box4">
+		<a href="#" id="d1">Choice 1</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		<a href="#" id="d2">Choice 2</a> 
+		<br> 
+		<a href="#" id="d3">Choice 3</a> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+		<a href="#" id="d4">Choice 4</a>
+		</div>
+
+		
+
+
+
+
+
+		</p>
+		</div>
+
+	
+
+		
+
+	</body>
