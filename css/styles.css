@@ -1,5 +1,5 @@
 html { 
-  background: url('../img/IMG_8235.JPG') no-repeat center center fixed; 
+  background: url('../img/IMG_8235.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -198,7 +198,7 @@ video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: 100;
-background: url('img/videoposter.JPG') no-repeat;
+background: url('img/videoposter.jpg') no-repeat;
 background-size: cover;
 display: none;
 }
