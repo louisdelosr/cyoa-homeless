@@ -17,9 +17,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<!-- Flash SWF Object -->
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<script type="text/javascript" src="js/swfobject.js"></script>
+		<script type="text/javascript" src="swfobject.js"></script>
 		<script type="text/javascript">
-		swfobject.registerObject("myId", "9.0.0", "flash/expressInstall.swf");
+		swfobject.registerObject("myId", "9.0.0", "expressInstall.swf");
 		</script>
 	<!-- Full Screen Video For Box 1 Option 4-->
 	<script type="text/javascript" src="jquery.videoBG.js"></script>
@@ -34,7 +34,7 @@
 
         $(document).ready(function() {
             $("#start").click(function() {
-                $("html").css("background-image", "url(img/IMG_8238.JPG)");
+                $("html").css("background-image", "url(img/IMG_8238.jpg)");
                 $("#first").fadeOut(2000);
 				$("#bottom1").fadeIn(1000);
                 $("#top1").fadeIn(1000);
@@ -54,7 +54,7 @@
 
         $(document).ready(function() {
             $("#a1").click(function() {
-                $("html").css("background-image", "url(img/IMG_8252.JPG)");
+                $("html").css("background-image", "url(img/IMG_8252.jpg)");
                 $("#box1").fadeOut(1000);
 				
                 $("#box2").fadeIn(1000);
@@ -70,7 +70,7 @@
 
         $(document).ready(function() {
             $("#a2").click(function() {
-                $("html").css("background-image", "url(img/IMG_8280.JPG)");
+                $("html").css("background-image", "url(img/IMG_8280.jpg)");
                 $("#box1").fadeOut(1000);
 				
                 $("#box2").fadeIn(1000);
@@ -85,7 +85,7 @@
 
         $(document).ready(function() {
             $("#a3").click(function() {
-                $("html").css("background-image", "url(img/IMG_8320.JPG)");
+                $("html").css("background-image", "url(img/IMG_8320.jpg)");
                	$("#box1").fadeOut(1000);
 				
                 $("#box2").fadeIn(1000);
@@ -109,15 +109,14 @@
 
         $('html').videoBG({
 		position:"fixed",
-		zIndex:'auto',
+		zIndex:100,
 		mp4:'video/sparechange.mp4',
+		/*ogv:'christmas_snow.ogv',*/
 		webm:'video/sparechange.webm',
-		loop: false,
+		poster:'img/videoposter.jpg',
 		opacity:100
 	});
-       $('video').on('ended',function(){
-      location.reload();
-    });
+       
             });
         });
         </script>
@@ -130,7 +129,7 @@
 
         $(document).ready(function() {
             $("#b1").click(function() {
-                $("html").css("background-image", "url(img/IMG_8278.JPG)");
+                $("html").css("background-image", "url(img/IMG_8278.jpg)");
                 $("#box2").fadeOut(1000);
 				
                 $("#box3").fadeIn(1000);
@@ -147,7 +146,7 @@
 
         $(document).ready(function() {
             $("#b2").click(function() {
-                $("html").css("background-image", "url(img/IMG_8282.JPG)");
+                $("html").css("background-image", "url(img/IMG_8282.jpg)");
                 $("#box2").fadeOut(1000);
 				
                 $("#box3").fadeIn(1000);
@@ -163,7 +162,7 @@
 
         $(document).ready(function() {
             $("#b3").click(function() {
-                $("html").css("background-image", "url(img/IMG_8248.JPG)");
+                $("html").css("background-image", "url(img/IMG_8248.jpg)");
                	$("#box2").fadeOut(1000);
 				
                 $("#box3").fadeIn(1000);
@@ -179,7 +178,7 @@
 
         $(document).ready(function() {
             $("#b4").click(function() {
-                $("html").css("background-image", "url(img/IMG_8321.JPG)");
+                $("html").css("background-image", "url(img/IMG_8321.jpg)");
                 $("#box2").fadeOut(1000);
 				
                 $("#box3").fadeIn(1000);
@@ -198,7 +197,7 @@
 
         $(document).ready(function() {
             $("#c1").click(function() {
-                $("html").css("background-image", "url(img/IMG_8295.JPG)");
+                $("html").css("background-image", "url(img/IMG_8295.jpg)");
                 $("#box3").fadeOut(1000);
 				
                 $("#box4").fadeIn(1000);
@@ -214,7 +213,7 @@
 
         $(document).ready(function() {
             $("#c2").click(function() {
-                $("html").css("background-image", "url(img/IMG_8281.JPG)");
+                $("html").css("background-image", "url(img/IMG_8281.jpg)");
                 $("#box3").fadeOut(1000);
 				
                 $("#box4").fadeIn(1000);
@@ -229,7 +228,7 @@
 
         $(document).ready(function() {
             $("#c3").click(function() {
-                $("html").css("background-image", "url(img/IMG_8292.JPG)");
+                $("html").css("background-image", "url(img/IMG_8292.jpg)");
                	$("#box3").fadeOut(1000);
 				
                 $("#box4").fadeIn(1000);
@@ -244,7 +243,7 @@
 
         $(document).ready(function() {
             $("#c4").click(function() {
-                $("html").css("background-image", "url(img/IMG_8319.JPG)");
+                $("html").css("background-image", "url(img/IMG_8319.jpg)");
                 $("#box3").fadeOut(1000);
 				
                 $("#box4").fadeIn(1000);
@@ -261,7 +260,7 @@
 
         $(document).ready(function() {
             $("#d1").click(function() {
-                $("html").css("background-image", "url(img/IMG_8347.JPG)");
+                $("html").css("background-image", "url(img/IMG_8347.jpg)");
                 $("#box4").fadeOut(1000);
 				
                 $("#box5").fadeIn(1000);
@@ -277,7 +276,7 @@
 
         $(document).ready(function() {
             $("#d2").click(function() {
-                $("html").css("background-image", "url(img/IMG_8341.JPG)");
+                $("html").css("background-image", "url(img/IMG_8341.jpg)");
                 $("#box4").fadeOut(1000);
 				
                 $("#box5").fadeIn(1000);
@@ -292,7 +291,7 @@
 
         $(document).ready(function() {
             $("#d3").click(function() {
-                $("html").css("background-image", "url(img/IMG_8331.JPG)");
+                $("html").css("background-image", "url(img/IMG_8331.jpg)");
                	$("#box4").fadeOut(1000);
 				
                 $("#box5").fadeIn(1000);
@@ -307,7 +306,7 @@
 
         $(document).ready(function() {
             $("#d4").click(function() {
-                $("html").css("background-image", "url(img/IMG_8324.JPG)");
+                $("html").css("background-image", "url(img/IMG_8324.jpg)");
                 $("#box4").fadeOut(1000);
 				
                 $("#box5").fadeIn(1000);
@@ -326,10 +325,10 @@
 
 <!-- Sound Flash File -->
 
-		
+	<div>	
 			<div id="flashContent">
 			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100" height="auto" id="sound" align="right">
-				<param name="movie" value="flash/sound.swf" />
+				<param name="movie" value="sound.swf" />
 				<param name="quality" value="high" />
 				<param name="bgcolor" value="#ffffff" />
 				<param name="play" value="true" />
@@ -341,8 +340,8 @@
 				<param name="salign" value="" />
 				<param name="allowScriptAccess" value="sameDomain" />
 				<!--[if !IE]>-->
-				<object type="application/x-shockwave-flash" data="flash/sound.swf" width="100" height="auto">
-					<param name="movie" value="flash/sound.swf" />
+				<object type="application/x-shockwave-flash" data="sound.swf" width="100" height="auto">
+					<param name="movie" value="sound.swf" />
 					<param name="quality" value="high" />
 					<param name="bgcolor" value="#ffffff" />
 					<param name="play" value="true" />
@@ -360,52 +359,67 @@
 				<!--[if !IE]>-->
 				</object>
 				<!--<![endif]-->
-			</object>
-
-			
-		
-
+			</object>	
 
 	</div>
 
 	<!-- Video For BOX 1 Option 4 -->
 
 	<div id="video">
-	<video loop="false" id="bgvid">
-	<source src="video/sparechange.webm" type="video/webm">
+	<video loop="false" poster="img/videoposter.jpg" id="bgvid">
+	<source src="sparechange.webm" type="video/webm">
 	<source src="video/sparechange.mp4" type="video/mp4">
 	</video>
-	</div> 
-
-	<div class="section group" id="first">
-		<div class="col span_1_of_3">
-		<center><h1><p id="title"><img src="img/logo2.png" width="50px" height="auto">HOMELESS</h1></center><div id="about">Homeless is a choose your own adventure story, where you play as a homeless youth living in the streets of Toronto.<center><h1>THE GOAL</h1>The goal of this website is to create awareness of the homeless youth of today. Take yourself into the shoes of somebody who does not have a place to live.</div>
-		</div>
-		<div class="col span_1_of_3" id="middle">
-		<a href="#" id="start"><p id="begin">Click here to begin your experience.</p></a>
-		</div>
-		<div class="col span_1_of_3">
-		<center><h1>PARTICIPANTS</h1></center>
-		<div id="connect">
-		<img src="img/guy1.jpg" width="80px" height="auto">
-		<img src="img/guy2.jpg" width="80px" height="auto">
-		<img src="img/girl1.jpg" width="80px" height="auto">
-		<img src="img/girl2.jpg" width="80px" height="auto">
-		<img src="img/guy1.jpg" width="80px" height="auto">
-		<img src="img/guy2.jpg" width="80px" height="auto">
-		<img src="img/girl1.jpg" width="80px" height="auto">
-		<img src="img/girl2.jpg" width="80px" height="auto">
-		<img src="img/guy1.jpg" width="80px" height="auto">
-		<img src="img/guy2.jpg" width="80px" height="auto">
-		<img src="img/girl1.jpg" width="80px" height="auto">
-		<img src="img/girl2.jpg" width="80px" height="auto">
-		<img src="img/guy1.jpg" width="80px" height="auto">
-		<img src="img/guy2.jpg" width="80px" height="auto">
-		<img src="img/girl1.jpg" width="80px" height="auto">
-		<img src="img/girl2.jpg" width="80px" height="auto">
-		</div>
-		</div>
 	</div>
+
+
+
+		<div class="section group" id="first">
+		<div class="col span_1_of_3">
+		<p id="about">
+		<center>
+		<h1><p id="title"><img src="img/logo2.png" width="50px" height="auto">HOMELESS</p></h1>
+		</center>
+			<div id="intro-about">
+			<br>
+			Homeless is a choose your own adventure story, where you play as a homeless youth living in the streets of Toronto.
+			<br><br>
+			<center><h1>THE GOAL</h1></center>
+			<br>
+			The goal of this website is to create awareness of the homeless youth of today. Take yourself into the shoes of somebody who does not have a place to live, and learn the potential factors of what cause youth homelessness.
+			<br><br><br>
+			</div>
+		</div>
+		</p>
+		</center>
+		
+		<a href="#" id="start"><div class="col span_1_of_3" id="middle">
+		<p id="begin">Click here to begin your experience.</p>
+		</div></a>
+
+		<div class="col span_1_of_3" id="connect">
+		<center><h1>PARTICIPANTS</h1></center>
+		<div id="people">
+		<img src="img/guy1.jpg" width="80px" height="auto">
+		<img src="img/guy2.jpg" width="80px" height="auto">
+		<img src="img/girl1.jpg" width="80px" height="auto">
+		<img src="img/girl2.jpg" width="80px" height="auto">
+		<img src="img/guy1.jpg" width="80px" height="auto">
+		<img src="img/guy2.jpg" width="80px" height="auto">
+		<img src="img/girl1.jpg" width="80px" height="auto">
+		<img src="img/girl2.jpg" width="80px" height="auto">
+		<img src="img/guy1.jpg" width="80px" height="auto">
+		<img src="img/guy2.jpg" width="80px" height="auto">
+		<img src="img/girl1.jpg" width="80px" height="auto">
+		<img src="img/girl2.jpg" width="80px" height="auto">
+		<img src="img/guy1.jpg" width="80px" height="auto">
+		<img src="img/guy2.jpg" width="80px" height="auto">
+		<img src="img/girl1.jpg" width="80px" height="auto">
+		<img src="img/girl2.jpg" width="80px" height="auto">
+		</div>
+		</div>
+		</div>
+	
 
 	<!-- Re appearing Divs -->
 
