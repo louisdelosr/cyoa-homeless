@@ -1,6 +1,6 @@
 # cyoa-homeless
 
-- 01/12/2018 This website is being revisited to edit for functionality reasons - LdR
+- 01/12/2018 This website is being revisited to edit for functionality reasons -LdR
 
 ________________________________
 
