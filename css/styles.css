@@ -1,5 +1,5 @@
 html { 
-  background: url('../img/IMG_8235.JPG') no-repeat center center fixed; 
+  background: url('../img/IMG_8235.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,7 +15,7 @@ a {
 	color: #FFF;
 }
 
-a:hover {color:#FFFF66;}
+a:hover p {color:#FFFF66;}
 
 h1 {
 	color: #FF0000;
@@ -40,7 +40,7 @@ h2 {
 .col {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 8.6%;
+	margin: 0 0.33% 0% 0.33%;
 	background-color:rgba(0, 0, 0, 0.81);
 	color: #FFF;
 
@@ -63,24 +63,40 @@ h2 {
 					
 /*  GRID OF THREE  */
 .span_3_of_3 {
-	width: 100%;
+	width: 33%;
 }
 .span_2_of_3 {
-	width: 63.8%;
+	width: 33%;
 }
 .span_1_of_3 {
-	width: 27.6%;
+	width: 32.8%;
 }
+
+#people img {
+	margin: 9px;
+}
+
+#people {
+	display: inline-block;
+	text-align: center;
+}
+
+#intro-about {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 50rem) {
 	.col { 
-		margin: 1% 0 1% 0%;
+		margin: 0.33% 0 0.33% 0.33%;
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 50rem) {
 	.span_3_of_3 {
 		width: 100%; 
 	}
@@ -95,8 +111,9 @@ h2 {
 /* About Styling First Box First Page */
 
 #about {
-	margin: 15px;
-	margin-bottom: 30px;
+	
+
+
 }
 
 /* Middle Column Custom Style */
@@ -112,7 +129,9 @@ h2 {
 /* The First Page Facebook Connect Box The Box On The Right */
 
 #connect {
-	margin-left: 6.5px;	
+	
+	
+	
 }
 
 /* Start Button Styling */
@@ -164,7 +183,6 @@ h2 {
 #flashContent {
 	
 	display: none;
-
 }
 
 #box1, #box2, #box3, #box4 {
@@ -179,7 +197,8 @@ h2 {
 video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
-width: auto; height: auto; z-index: auto;
+width: auto; height: auto; z-index: 100;
+background: url('img/videoposter.jpg') no-repeat;
 background-size: cover;
 display: none;
 }
@@ -193,7 +212,6 @@ display: none;
 	margin-top: 60px;
 	margin-left: 10px;
 	margin-right: 10px;
-
 }
 
 #title {
@@ -203,3 +221,4 @@ display: none;
 #start {
 
 }
+
