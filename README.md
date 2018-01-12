@@ -1,5 +1,9 @@
 # cyoa-homeless
 
+This website is being revisited to edit for functionality reasons
+
+________________________________
+
 This is a repository of a project I did in University of Toronto's Joint Program with Centennial College.
 
 - My Responsibilities: Coding (CSS, HTML, jQuery), Designing (Wireframes, UI Mockups), Scheduling, Presentation
