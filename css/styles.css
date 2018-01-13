@@ -86,7 +86,12 @@ h2 {
 	margin-right: 50px;
 }
 
-
+#caption2 a {
+	cursor: pointer;
+}
+#caption2 a:hover {
+	color: red;
+}
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
@@ -192,15 +197,51 @@ h2 {
 
 }
 
+#invisiblebox {
+	position: fixed;
+	bottom: 10px;
+	margin: 0 0 0 -25%;
+	left:50%;
+	width:50%;
+	height: 150px;
+	
+	color: #FFF;
+	visibility: hidden;
+	
+}
+
+#invisiblebox2 {
+	position: fixed;
+	bottom: 10px;
+	margin: 0 0 0 -30%;
+	left:50%;
+	width:50%;
+	height: 150px;
+	
+	color: #FFF;
+	visibility: hidden;
+	
+}
+
 /* For Full screen Background Video for BOX 1 OPTION 4 */
 
 video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: 100;
-background: url('img/videoposter.jpg') no-repeat;
+/*background: url('img/videoposter.jpg') no-repeat;*/
 background-size: cover;
-display: none;
+
+}
+
+#caption2 {
+	margin: 0 0 0 25%;
+	margin-top: 35px;
+}
+
+#caption {
+	margin: 0 0 0 35%;
+	margin-top: 25px;
 }
 
 #video {
@@ -210,8 +251,14 @@ display: none;
 
 #first {
 	margin-top: 60px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#first2 {
+	margin-top: 70px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 #title {
