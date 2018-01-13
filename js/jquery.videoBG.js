@@ -283,11 +283,11 @@
 		$(document).ready(function(){
     $video.on('ended',function(){
       $video.css('display', 'none');
-      $("html").css("background-image", "url(img/IMG_8278.jpg)");
-      $("#flashContent").fadeIn(250);
+      $("html").css("background-image", "url(img/IMG_8278.JPG)");
       $('#top1').fadeIn(250);
       $('#box2').fadeIn(250);
       $('#invisiblebox').fadeOut(250);
+      $("#flashContent").css('visibility','visible');
     });
   });
 		
