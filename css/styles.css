@@ -1,5 +1,5 @@
 html { 
-  background: url('../img/IMG_8235.jpg') no-repeat center center fixed; 
+  background: url('../img/IMG_8235.JPG') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -186,8 +186,13 @@ h2 {
 }
 
 #flashContent {
-	
-	display: none;
+	z-index: 999;
+	visibility: hidden;
+	position: absolute;
+	float: right;
+	width: 100%;
+	margin-top: -30px;
+	right: 15px;
 }
 
 #box1, #box2, #box3, #box4 {
