@@ -9,20 +9,22 @@
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
     
-	<title>S2P2</title>
+	<title>Homeless | A Choose Your Own Adventure Youth Homelessness Simulation</title>
 
 	<!--JQUERY Plugin-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<!-- GOOGLE FONTS-->
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<!-- Flash SWF Object -->
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript" src="js/swfobject.js"></script>
 		<script type="text/javascript">
-		swfobject.registerObject("myId", "9.0.0", "expressInstall.swf");
+		swfobject.registerObject("myId", "9.0.0", "flash/expressInstall.swf");
 		</script>
 	<!-- Full Screen Video For Box 1 Option 4-->
-	<script type="text/javascript" src="jquery.videoBG.js"></script>
+	<script type="text/javascript" src="js/jquery.videoBG.js"></script>
+
+
 
 	</head>
 
@@ -35,11 +37,11 @@
         $(document).ready(function() {
             $("#start").click(function() {
                 $("html").css("background-image", "url(img/IMG_8238.jpg)");
-                $("#first").fadeOut(2000);
-				$("#bottom1").fadeIn(1000);
-                $("#top1").fadeIn(1000);
+                $("#first").fadeOut(250);
+				$("#bottom1").fadeIn(250);
+                $("#top1").fadeIn(250);
                 $("#flashContent").fadeIn(0);
-                $("#box1").fadeIn(1000);
+                $("#box1").fadeIn(250);
        
             });
         });
@@ -55,9 +57,8 @@
         $(document).ready(function() {
             $("#a1").click(function() {
                 $("html").css("background-image", "url(img/IMG_8252.jpg)");
-                $("#box1").fadeOut(1000);
-				
-                $("#box2").fadeIn(1000);
+                $("#box1").fadeOut(250);
+                $("#box2").fadeIn(250);
 				
        
             });
@@ -71,9 +72,9 @@
         $(document).ready(function() {
             $("#a2").click(function() {
                 $("html").css("background-image", "url(img/IMG_8280.jpg)");
-                $("#box1").fadeOut(1000);
-				
-                $("#box2").fadeIn(1000);
+                $("#box1").fadeOut(250);
+                $("#box2").fadeIn(250);
+                
        
             });
         });
@@ -86,9 +87,9 @@
         $(document).ready(function() {
             $("#a3").click(function() {
                 $("html").css("background-image", "url(img/IMG_8320.jpg)");
-               	$("#box1").fadeOut(1000);
-				
-                $("#box2").fadeIn(1000);
+               	$("#box1").fadeOut(250);
+                $("#box2").fadeIn(250);
+                
        
             });
         });
@@ -101,19 +102,25 @@
         $(document).ready(function() {
             $("#a4").click(function() {
             	
-                $("html").css("background-image:none");
-                $("#box1").fadeOut(1000);
-               	$("#box2").fadeIn(1000);
-				
-                $("#video").fadeIn(1000);
+                $("html").css("background-image", "none");
+                
+                $("#box1").css('display','none');
+                $("#choices").css('display','none');
+                $("#top1").css('display','none');
+                $("#flashContent").css('display','none');
+
+               	//$("#box2").fadeIn(250);
+                $("#video").fadeIn(250);
+
+
 
         $('html').videoBG({
 		position:"fixed",
-		zIndex:100,
-		mp4:'video/sparechange.mp4',
+		zIndex:1,
+		mp4:'video/sparechangemp4.mp4',
 		/*ogv:'christmas_snow.ogv',*/
-		webm:'video/sparechange.webm',
-		poster:'img/videoposter.jpg',
+		webm:'video/sparechangewebm.webm',
+		
 		opacity:100
 	});
        
@@ -130,10 +137,9 @@
         $(document).ready(function() {
             $("#b1").click(function() {
                 $("html").css("background-image", "url(img/IMG_8278.jpg)");
-                $("#box2").fadeOut(1000);
-				
-                $("#box3").fadeIn(1000);
-                $("#video").fadeOut(1000);
+                $("#box2").fadeOut(250);
+				$("#video").fadeOut(250);
+                $("#box3").fadeIn(250);
 				
        
             });
@@ -147,10 +153,10 @@
         $(document).ready(function() {
             $("#b2").click(function() {
                 $("html").css("background-image", "url(img/IMG_8282.jpg)");
-                $("#box2").fadeOut(1000);
+                $("#box2").fadeOut(250);
 				
-                $("#box3").fadeIn(1000);
-                $("#video").fadeOut(1000);
+                $("#box3").fadeIn(250);
+                $("#video").fadeOut(250);
        
             });
         });
@@ -163,10 +169,10 @@
         $(document).ready(function() {
             $("#b3").click(function() {
                 $("html").css("background-image", "url(img/IMG_8248.jpg)");
-               	$("#box2").fadeOut(1000);
+               	$("#box2").fadeOut(250);
 				
-                $("#box3").fadeIn(1000);
-                $("#video").fadeOut(1000);
+                $("#box3").fadeIn(250);
+                $("#video").fadeOut(250);
        
             });
         });
@@ -179,10 +185,10 @@
         $(document).ready(function() {
             $("#b4").click(function() {
                 $("html").css("background-image", "url(img/IMG_8321.jpg)");
-                $("#box2").fadeOut(1000);
+                $("#box2").fadeOut(250);
 				
-                $("#box3").fadeIn(1000);
-                $("#video").fadeOut(1000);
+                $("#box3").fadeIn(250);
+                $("#video").fadeOut(250);
        
             });
         });
@@ -198,9 +204,9 @@
         $(document).ready(function() {
             $("#c1").click(function() {
                 $("html").css("background-image", "url(img/IMG_8295.jpg)");
-                $("#box3").fadeOut(1000);
+                $("#box3").fadeOut(250);
 				
-                $("#box4").fadeIn(1000);
+                $("#box4").fadeIn(250);
 				
        
             });
@@ -214,9 +220,9 @@
         $(document).ready(function() {
             $("#c2").click(function() {
                 $("html").css("background-image", "url(img/IMG_8281.jpg)");
-                $("#box3").fadeOut(1000);
+                $("#box3").fadeOut(250);
 				
-                $("#box4").fadeIn(1000);
+                $("#box4").fadeIn(250);
        
             });
         });
@@ -229,9 +235,9 @@
         $(document).ready(function() {
             $("#c3").click(function() {
                 $("html").css("background-image", "url(img/IMG_8292.jpg)");
-               	$("#box3").fadeOut(1000);
+               	$("#box3").fadeOut(250);
 				
-                $("#box4").fadeIn(1000);
+                $("#box4").fadeIn(250);
        
             });
         });
@@ -244,9 +250,9 @@
         $(document).ready(function() {
             $("#c4").click(function() {
                 $("html").css("background-image", "url(img/IMG_8319.jpg)");
-                $("#box3").fadeOut(1000);
+                $("#box3").fadeOut(250);
 				
-                $("#box4").fadeIn(1000);
+                $("#box4").fadeIn(250);
        
             });
         });
@@ -261,11 +267,10 @@
         $(document).ready(function() {
             $("#d1").click(function() {
                 $("html").css("background-image", "url(img/IMG_8347.jpg)");
-                $("#box4").fadeOut(1000);
-				
-                $("#box5").fadeIn(1000);
-				
-       
+                $("#box4").fadeOut(250);
+                $("#choices").fadeOut(250);
+                $("#top1").fadeOut(250);
+                $('#invisiblebox2').css('visibility','visible');
             });
         });
         </script>
@@ -277,10 +282,10 @@
         $(document).ready(function() {
             $("#d2").click(function() {
                 $("html").css("background-image", "url(img/IMG_8341.jpg)");
-                $("#box4").fadeOut(1000);
-				
-                $("#box5").fadeIn(1000);
-       
+                $("#box4").fadeOut(250);
+                $("#choices").fadeOut(250);
+                $("#top1").fadeOut(250);
+                $('#invisiblebox2').css('visibility','visible');
             });
         });
         </script>
@@ -292,10 +297,10 @@
         $(document).ready(function() {
             $("#d3").click(function() {
                 $("html").css("background-image", "url(img/IMG_8331.jpg)");
-               	$("#box4").fadeOut(1000);
-				
-                $("#box5").fadeIn(1000);
-       
+               	$("#box4").fadeOut(250);
+                $("#choices").fadeOut(250);
+                $("#top1").fadeOut(250);
+                $('#invisiblebox2').css('visibility','visible');
             });
         });
         </script>
@@ -307,9 +312,10 @@
         $(document).ready(function() {
             $("#d4").click(function() {
                 $("html").css("background-image", "url(img/IMG_8324.jpg)");
-                $("#box4").fadeOut(1000);
-				
-                $("#box5").fadeIn(1000);
+                $("#box4").fadeOut(250);
+                $("#choices").fadeOut(250);
+                $("#top1").fadeOut(250);
+                $('#invisiblebox2').css('visibility','visible');
        
             });
         });
@@ -328,7 +334,7 @@
 	<div>	
 			<div id="flashContent">
 			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100" height="auto" id="sound" align="right">
-				<param name="movie" value="sound.swf" />
+				<param name="movie" value="sound/streetsounds.swf" />
 				<param name="quality" value="high" />
 				<param name="bgcolor" value="#ffffff" />
 				<param name="play" value="true" />
@@ -340,8 +346,8 @@
 				<param name="salign" value="" />
 				<param name="allowScriptAccess" value="sameDomain" />
 				<!--[if !IE]>-->
-				<object type="application/x-shockwave-flash" data="sound.swf" width="100" height="auto">
-					<param name="movie" value="sound.swf" />
+				<object type="application/x-shockwave-flash" data="sound/streetsounds.swf" width="100" height="auto">
+					<param name="movie" value="sound/streetsounds.swf" />
 					<param name="quality" value="high" />
 					<param name="bgcolor" value="#ffffff" />
 					<param name="play" value="true" />
@@ -365,14 +371,18 @@
 
 	<!-- Video For BOX 1 Option 4 -->
 
-	<div id="video">
-	<video loop="false" poster="img/videoposter.jpg" id="bgvid">
-	<source src="sparechange.webm" type="video/webm">
-	<source src="video/sparechange.mp4" type="video/mp4">
+	<div id="video" loop="false">
+	<video id="bgvid">
+	<source src="video/sparechangewebm.webm" type="video/webm">
+	<source src="video/sparechangemp4.mp4" type="video/mp4">
 	</video>
 	</div>
 
-
+<script>/*<![CDATA[*/
+  document.getElementById('video').addEventListener('ended',function(){
+    console.log('Video has ended!');
+  }, false);
+/*]]>*/</script>
 
 		<div class="section group" id="first">
 		<div class="col span_1_of_3">
@@ -420,10 +430,9 @@
 		</div>
 		</div>
 	
-
 	<!-- Re appearing Divs -->
 
-	<div id="top1"><p id="first">You wake up at your usual sleeping spot. It's cold out, and you're very hungry. What do you decide to do?</P></div>
+	<div id="top1"><p id="first2">You wake up at your usual sleeping spot. It's cold out, and you're very hungry. <br>What do you decide to do?</P></div>
 	<div id="bottom1">
 
 		<p id="choices">
@@ -432,12 +441,13 @@
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<a href="#" id="a2">Find food.</a> 
 		<br> 
-		<a href="#" id="a3">Panhandle.</a> 
+		<a href="#" id="a3">Get a job.</a> 
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		<a href="#" id="a4">Get a job.</a>
+		<a href="#" id="a4">Panhandle.</a>
 		</div>
 		
 		<div id="box2">
+
 		<a href="#" id="b1">Choice 1</a> 
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<a href="#" id="b2">Choice 2</a> 
@@ -468,17 +478,25 @@
 		<a href="#" id="d4">Choice 4</a>
 		</div>
 
-		
-
-
-
-
 
 		</p>
 		</div>
 
-	
+		<div id="invisiblebox">
+		<p id="caption">
+		You: Spare change please? <br>
+		Man: No...! <br>
+		You: Spare change please? <br>
+		Woman: Sorry, no.
+		</p>
+		</div>
 
-		
+		<div id="invisiblebox2">
+		<p id="caption2">
+		Thank you for participating. <br>
+		This website is under construction, and right now is a work in progress.
+		As of now (01/18/2018), <i>Homeless</i> is a functional prototype. <a onclick="window.location.reload()">Click here to replay.</a>
+		</p>
+		</div>
 
 	</body>
