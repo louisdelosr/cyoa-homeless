@@ -39,7 +39,7 @@
 		
 		// we need a height
 		if (options.height == 0)
-			options.height = container.height();	
+			options.height = '100%';	
 		
 		// get the wrapper
 		var wrap = $.fn.videoBG.wrapper();
@@ -193,6 +193,7 @@
 				if (loops_left !== true)
 					// one less loop
 					loops_left--;
+					
   			});
 		}
 		
@@ -271,6 +272,24 @@
 			$video.height(options.height).width(options.width);
 			$img.height(options.height).width(options.width);	
 		}
+
+
+		$(document).ready(function(){
+    $video.on('playing',function(){
+      $('#invisiblebox').css('visibility','visible');
+    });
+  });
+
+		$(document).ready(function(){
+    $video.on('ended',function(){
+      $video.css('display', 'none');
+      $("html").css("background-image", "url(img/IMG_8278.jpg)");
+      $("#flashContent").fadeIn(250);
+      $('#top1').fadeIn(250);
+      $('#box2').fadeIn(250);
+      $('#invisiblebox').fadeOut(250);
+    });
+  });
 		
 		if ($.fn.videoBG.supportsVideo()) {
 			v.play();
@@ -326,7 +345,7 @@
 			webm:'',
 			poster:'',
 			autoplay:true,
-			loop:true,
+			loop:false,
 			scale:false,
 			position:"absolute",
 			opacity:1,
@@ -335,7 +354,7 @@
 			width:0,
 			height:0,
 			fullscreen:false,
-			imgFallback:true
+			imgFallback:false
 		}
 
 })( jQuery );
